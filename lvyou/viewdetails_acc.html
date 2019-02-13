@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LV You</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pizzeria Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<link href="css/simplelightbox.min.css" rel="stylesheet" type="text/css">
+<link href="css/teamsite-style.css" rel="stylesheet" type="text/css" >
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+<link rel="short icon" href="/static/img/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!-- banner -->
+<div class="dashboardheader">
+  <div class="top nav">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="header_logo"><img src="images/Lv-Logo_white.png" width="100%" height="auto" alt=""/></div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav class="link-effect-2" id="link-effect-2">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#" class="effect-3">Account</a></li>
+		<li><a href="#we-offer" class="effect-3 page-scroll">Pay & Trandfer</a></li>
+		<li><a href="#services" class="effect-3 page-scroll">Apply</a></li>
+      </ul>
+	  </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+</div>
+    <div class="w3_agile_header">
+      <div class="w3_menu">
+        <div class="agileits_w3layouts_banner_info">
+
+        </div>
+        <div class="mobile-nav-button">
+          <div class=""><img src="images/Profile-icon-white.png" width="30" height="auto" alt=""/></div>
+         
+        </div>
+        <nav class="mobile-menu">
+          <ul>
+             <li><a href="#register" class="register_tap" style="height:45px;" >Register Now</a></li>
+			<div class="profile_part">
+              <div class="profile_pic">
+                <img src="images/car.jpeg" alt="..." width="50%" height="auto" class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+<div class="clearfix"></div>
+</div>
+<!-- //banner --> 
+
+<div class="top_fixed">
+  <div class="top_cata">
+    <button class="tablink" onclick="openPage('Home', this,)"><div class="col-sm"><p>Accounts</p><p>RM330.00</p></div>
+	  
+	 </button>
+    <button class="tablink" onclick="openPage('News', this,)" id="defaultOpen"><div class="col-sm"><p>Accounts</p><p>RM330.00</p></div></button>
+    <button class="tablink" onclick="openPage('Contact', this,)"><div class="col-sm"><p>Accounts</p><p>RM330.00</p></div></button>
+    <button class="tablink" onclick="openPage('About', this,)"><div class="col-sm"><p>Accounts</p><p>RM330.00</p></div></button>
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <p>Home is where the heart is..</p>
+    </div>
+    <div id="News" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p>
+    </div>
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+    <script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script> 
+  </div>
+</div>
+
+
+
+<!-- /menu -->
+<div class="w3-food-menu" id="ourmenu">
+  <!--<div class="middle">
+    <div class="container_left">
+      <div class="agileinfo-gallery-row">
+        <div class="col-md-6">
+          <div class="card_box">
+            <div class="account_left"> Saving Account </div>
+            <div class="account_right"> </div>
+            <br>
+            <br>
+            <div class="account_amount">
+              <p> RM3000.00 </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">  <div class="card_box">
+            <div class="account_left"> Saving Account </div>
+            <div class="account_right"> </div>
+            <br>
+            <br>
+            <div class="clearfix"></div>
+            <div class="account_amount">
+              <p> RM3000.00 </p>
+            </div></div>
+
+      </div>
+              <div class="clearfix"> </div>
+    </div>
+    
+          <div class="agileinfo-gallery-row">
+        <div class="col-md-6">
+          <div class="card_box">
+            <div class="account_left"> Saving Account </div>
+            <div class="account_right"> </div>
+            <br>
+            <br>
+            <div class="account_amount">
+              <p> RM3000.00 </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">  <div class="card_box">
+            <div class="account_left"> Saving Account </div>
+            <div class="account_right"> </div>
+            <br>
+            <br>
+            <div class="clearfix"></div>
+            <div class="account_amount">
+              <p> RM3000.00 </p>
+            </div></div>
+
+      </div>
+              <div class="clearfix"> </div>
+    </div>
+  </div>
+</div> -->
+
+<br>
+<br>
+<br>
+
+
+<div class="clearfix"></div>
+	<div class="container-fluid"><div class="row GoalsContainer---goalsContainer---3Numx"><div class="row"><div class="col-xs-12"><div class="ZeroGoals---zero_goals-wrapper---1Ukxt"><div class="row"><div class="col-xs-12"><div class="ZeroGoals---error_picture_container---wzQTK"><img src="images/set_your_goal.png"></div></div></div><div class="row"><div class="col-xs-12"><h2>Get more from your money!</h2></div></div><div class="row"><div class="col-xs-12"><div class="text"><span class="margin-bottom">Plan, create and track your financial goals with the Goals Savings Plan</span><span class="margin-bottom-sm">Get started today!</span></div></div></div></div></div><div class="col-xs-12"><button class=" btn btn-default" disabled="">Coming Soon</button></div></div></div></div>	
+	<!-- footer -->
+<div class="footer-agile">
+  <div class="container">
+    <div class="footer-logo">
+      <h3> <i class="" aria-hidden="true"></i>LV YOU</h3>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#home" class="scroll">Home</a></li>
+        <li><a href="#about" class="scroll">About</a></li>
+        <li><a href="#ourmenu" class="scroll">Menu</a></li>
+        <li><a href="#team" class="scroll">Team</a></li>
+        <li><a href="#gallery" class="scroll">Gallery</a></li>
+        <li><a href="#contact" class="scroll">Contact</a></li>
+      </ul>
+    </div>
+    <div class="social">
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- //footer --> 
+
+<!-- copyright -->
+<div class="copyright-agile">
+  <p>&copy; 2018 LV YOU. All rights reserved | </p>
+</div>
+<!-- //copyright --> 
+
+<script src="js/responsiveslides.min.js"></script> 
+<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:true,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script> 
+<!--banner Slider starts Here--> 
+<!-- for bootstrap working --> 
+<script src="js/bootstrap.js"></script> 
+<!-- //for bootstrap working --> 
+<!-- start-smoth-scrolling --> 
+<script src="js/SmoothScroll.min.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script> 
+<script type="text/javascript" src="js/easing.js"></script> 
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- start-smoth-scrolling --> 
+<!-- here stars scrolling icon --> 
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script> 
+<!-- //here ends scrolling icon --> 
+<script type="text/javascript" src="js/simple-lightbox.min.js"></script> 
+<script>
+				$(function(){
+					var gallery = $('.agileinfo-gallery-row a').simpleLightbox({navText:		['&lsaquo;','&rsaquo;']});
+				});
+			</script> 
+
+<!-- menu --> 
+<script>
+	$(document).ready(function () {
+	  $('.mobile-nav-button').on('click', function() {
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");  
+	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");  
+	  
+	  $('.mobile-menu').toggleClass('mobile-menu--open');
+	  return false;
+	}); 
+	});
+</script> 
+<!-- //menu -->
+
+</body>
+</html>
